@@ -66,7 +66,7 @@ YAHOO_WEATHER_NS     = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 NOAA_WEATHER_URL     = 'http://www.weather.gov/xml/current_obs/%s.xml'
 
 WEATHER_COM_URL      = 'http://wxdata.weather.com/wxdata/weather/local/%s?' + \
-                       'unit=%s&dayf=5&cc=*'
+                       'unit=%s&dayf=7&cc=*'
 
 LOCID_SEARCH_URL     = 'http://wxdata.weather.com/wxdata/search/search?where=%s'
 
