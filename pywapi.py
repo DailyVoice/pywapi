@@ -51,6 +51,14 @@ from math import pow
 from xml.dom import minidom
 import json
 
+########
+## random string gen for fresh xml
+from random import choice
+from string import ascii_uppercase
+
+random_string = ''.join(choice(ascii_uppercase) for i in range(12))
+########
+
 try:
     from unidecode import unidecode
 except ImportError:
@@ -66,7 +74,7 @@ YAHOO_WEATHER_NS     = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 NOAA_WEATHER_URL     = 'http://www.weather.gov/xml/current_obs/%s.xml'
 
 WEATHER_COM_URL      = 'http://wxdata.weather.com/wxdata/weather/local/%s?' + \
-                       'unit=%s&dayf=7&cc=*'
+                       'unit=%s&dayf=7&cc=*' + '&random=' + random_string
 
 LOCID_SEARCH_URL     = 'http://wxdata.weather.com/wxdata/search/search?where=%s'
 
